@@ -4,11 +4,15 @@
   "description": "",
   "main": "cypress.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:spec": "cypress run --spec",
+    "cy:test:chrome": "cypress run --browser chrome",
+    "cy:test:edge": "cypress run --browser edge",
+    "cy:test:firefox": "cypress run --browser firefox",
+    "test": "cypress run",
+    "cy:verify": "cypress verify"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "cypress": "^12.12.0"
-  }
+  "author": "Burhan Semiz",
+  "license": "ISC"
 }
