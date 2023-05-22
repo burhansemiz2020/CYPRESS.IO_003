@@ -15,5 +15,10 @@ describe('Cypress Fixture Usage', () => {
             cy.login(data.validUsername, data.invalidPassword)
                 })
     });
+    it('Then example', () => {
+        cy.get('#price').then(()=>{
+            cy.get('.priceFields').should('be.visible').type('100')
+        })
+    });
 
 });
